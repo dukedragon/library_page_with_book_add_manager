@@ -1,0 +1,9 @@
+este es un proyecto de una pagina web de una libreria en conjunto de pagina para agregar mas libros a la base 
+de datos de la librea la cual se veran reflejado es index.horizontalAlignment
+
+pasos para probar el proyecto:
+
+1: "npm i" para descargar todo lo necesario
+2: "npm start" para iniciar la api de la libreria 
+3: click derecho en pages/index.html y click en open with live server 
+(descargar extension live server de ser necesario)

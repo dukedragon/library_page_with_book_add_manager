@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    color: #333;
+}
+.head {
+  width: 100%;
+  height: 60px;
+  background-color: #007bff;
+  border-bottom: 5px solid #333;
+  display: flex;
+}
+.head a{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00c3ff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.book-container:focus .overlay {
+  opacity: 1; /* Muestra el overlay al recibir el foco */
+}
+
+#book-list li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.book-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Altura fija para todas las imágenes */
+  position: relative; /* Para posicionar el overlay */
+}
+.book-container:focus {
+  opacity: 1;
+}
+.book-container img {
+  max-width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+  max-height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+  object-fit: contain; /* Ajusta la imagen dentro del contenedor sin deformarla */
+  transition: 0.3s ease; /* Añade una transición suave */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+  color: white; /* Texto en blanco */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease; /* Transición suave */
+}
+.overlay p{
+ margin: auto;
+ 
+}
+.book-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+    color: white; /* Texto en blanco */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+.book-container:hover .overlay {
+  opacity: 1; /* Muestra el overlay al hacer hover */
+}
+#libros {
+    display: flex; /* Usamos flexbox para la distribución */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente línea si no caben */
+    gap: 20px; /* Espacio entre los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+  
+  .book-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el espacio disponible */
+    align-items: center;
+    width: 150px; /* Ancho del contenedor del libro */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    border: 1px solid #ccc; /* Añadimos un borde para visualización */
+    padding: 10px; /* Añadimos un poco de padding */
+  }
+  
+  .book-container img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
+  .book-container h3 {
+    max-width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+  max-height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+  object-fit: contain; /* Ajusta la imagen dentro del contenedor sin deformarla */
+  }
+  .book-title {
+    margin-top: auto; /* Empuja el título hacia abajo */
+    font-size: 1em; /* Tamaño de la fuente del título */
+    margin-top: 10px; /* Espacio entre la imagen y el título */
+    min-height: 2em; /* Altura mínima para los títulos para mantener consistencia */
+  }
+
+
+
+
+
+
+
