@@ -30,6 +30,15 @@ h1, h2 {
   margin-bottom: 10px;
   margin-left: 10px;
 }
+.footer {
+  width: 100%;
+  background-color: #00c3ff;
+  height: 100px;
+  display: flex;
+  justify-content: right;
+
+}
+
 .book-container:focus .overlay {
   opacity: 1; /* Muestra el overlay al recibir el foco */
 }
@@ -96,17 +105,18 @@ h1, h2 {
 }
 #libros {
     display: flex; /* Usamos flexbox para la distribución */
+    height: 500px;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente línea si no caben */
     gap: 20px; /* Espacio entre los elementos */
     justify-content: center; /* Centra los elementos horizontalmente */
   }
-  
   .book-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distribuye el espacio disponible */
     align-items: center;
     width: 150px; /* Ancho del contenedor del libro */
+    height: 210px;
     text-align: center; /* Centra el texto dentro del contenedor */
     border: 1px solid #ccc; /* Añadimos un borde para visualización */
     padding: 10px; /* Añadimos un poco de padding */

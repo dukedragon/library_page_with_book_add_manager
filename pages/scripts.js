@@ -59,11 +59,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Añadimos etiquetas ARIA para describir la imagen y el título
         bookContainer.setAttribute('aria-label', `${libro.titulo}, imagen`);
-        
+
         // Añadimos el contenedor de la imagen y el título al contenedor del libro
         bookContainer.appendChild(imgContainer);
         bookContainer.appendChild(titulo);
-
         // Añadimos el contenedor del libro al div libros
         librosDiv.appendChild(bookContainer);
       });
